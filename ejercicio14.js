@@ -12,18 +12,18 @@ const words = [
     'code'
   ];
   function repeatCounter(list) {
-    let counter = 0;
-    let repetitions = [];
-    for (let i = 0; i < list.length; i++) {
-        if(list[i++] === list[i]){
-            console.log("Se repite" +" "+  words[i])
-            counter++;
-        } else {
-            repetitions.push(counter);
-            counter = 1
-        }
+    const wordCount = {};
+
+    for (const word of list) {
+       if (wordCount [word]) {
+        wordCount[word]++;
+       } else{
+        wordCount[word] = 1;
+       }
     }
-    console.log(repetitions)
+    console.log(wordCount);
+    
   }
 
-  repeatCounter(words)
+ repeatCounter(words);
+  

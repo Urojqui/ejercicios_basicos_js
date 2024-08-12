@@ -12,11 +12,11 @@ const names = [
     'Marc'
   ];
   function nameFinder(nameList, name) {
-    const position = nameList.indexOf(name);
-    if (position === -1) {
+    const index = nameList.indexOf(name);
+    if (index === -1) {
         console.log(false, "No se encuentra el elemento")
     } else {
-        console.log(true, position)
+        console.log(true, index)
     }    
   }
 
