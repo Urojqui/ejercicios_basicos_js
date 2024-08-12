@@ -1,7 +1,7 @@
 const numbers = [12, 21, 38, 5, 45, 37, 6];
 function average(numberList) {
   let counter = 0
-  for (const number of numbers) {
+  for (const number of numberList) {
    counter += number; 
   }
   const average = counter / numbers.length;
